@@ -49,17 +49,39 @@
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
+// Console.Write("Введите число: ");
+// int num = int.Parse(Console.ReadLine()!);
+
+// if (num % 2 == 0)
+
+// {
+//   Console.WriteLine($"Число {num} является ЧЁТНЫМ");
+// }
+
+// else
+
+// {
+//   Console.WriteLine($"Число {num} является НЕЧЁТНЫМ");
+// }
+
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+
 Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine()!);
+int num = 1;
+int N = int.Parse(Console.ReadLine()!);
+Console.WriteLine($"Чётные числа от 1 до {N}:");
 
-if (num % 2 == 0)
-
+while (num <= N)
 {
-  Console.WriteLine($"Число {num} является ЧЁТНЫМ");
-}
-
-else
-
-{
-  Console.WriteLine($"Число {num} является НЕЧЁТНЫМ");
+  if (num % 2 == 0)
+  {
+    Console.Write($"{num}  ");
+    
+  }
+  num++;
 }
